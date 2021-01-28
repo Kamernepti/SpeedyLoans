@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/result.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{% static 'script/result.js' %}"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision</title>
+</head>
+<body>
+    <div id="wrapper">
+
+        <div id="header">
+            <h1>Speedy Loans</h1>
+            <img src="static/images/jetpic.jpg" alt="jet_pic" style="width:100px">
+            <p>1-800-Speedy1</p>
+        </div>
+
+        <div id="approve">
+            <h2>Approved!</h2>
+        </div>
+
+        <div id="message">
+            <p>Dear <strong>(first name and last name),</strong></p>
+            <p>You've been conditionally approved for a home loan in the amount of <strong>(analysis result)</strong>.  This pre-approval is valide for 30 days.  If you have any questions, please call or email us at the contact information below:</p>
+            <p>Speedy Loans</p>
+            <p>1-800-685-0091</p>
+            <p>CA NMLS 014946</p>
+        </div>
+
+    </div>
+</body>
+</html>

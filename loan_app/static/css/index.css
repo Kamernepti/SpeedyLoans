@@ -1,0 +1,12 @@
+#wrapper {
+    
+}
+
+#header h1, img, a {
+    display:inline;
+}
+
+#start_box {
+    outline: 2px solid black;
+    height: auto;
+}

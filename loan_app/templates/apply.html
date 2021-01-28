@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/apply.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{% static 'script/apply.js' %}"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speedy Loans Application</title>
+</head>
+<body>
+    <div id="wrapper">
+
+        <div id="header">
+            <h1>Speedy Loans</h1>
+            <img src="static/images/jetpic.jpg" alt="jet_pic" style="width:100px">
+            <p>1-800-Speedy1</p>
+            <a href="">Step 2<img src="static/images/arrow.jpg" alt="arrow_pic" style="width:75px"></a>
+        </div>
+
+        <div id="personal_info">
+            <h2>Enter your information to begin:</h2>
+            <p>Full Name: <input type="text" name="full_name"></p>
+            <p>Home Address: <input type="text" name="address"></p>
+        </div>
+
+        <div id="employer_info">
+            <h2>Employer Name:</h2>
+            <p>Time Employed (Months): <input type="number" id="employment_time" name="employment_time"></p>
+            <p>Contact Info: <input type="text" id="contact" name="contact"></p>
+        </div>
+
+        <div id="financials">
+            <h2>Financials:</h2>
+            <p>Income (Annualized): <input type="number" id="income" name="income"></p>
+            <p>Assets (Cash, Retirement, Investments): <input type="number" id="assets" name="assets"></p>
+            <p>Debt (Mortgages, Credit Cards, Installment Loan): <input type="number" id="debt" name="debt"></p>
+        </div>
+
+        <div id="chat"></div>
+
+    </div>
+</body>
+</html>

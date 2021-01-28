@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/apply2.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{% static 'script/apply2.js' %}"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speedy Loans Application Cont.</title>
+</head>
+<body>
+    <div id="wrapper">
+
+        <div id="header">
+            <h1>Speedy Loans</h1>
+            <img src="static/images/jetpic.jpg" alt="jet_pic" style="width:100px">
+            <p>1-800-Speedy1</p>
+            <a href="">Step 3<img src="static/images/arrow.jpg" alt="arrow_pic" style="width:75px"></a>
+        </div>
+
+        <div id="authorize">
+            <h2>Last Step:</h2>
+            <p>What was your 2020 Gross Income (IRS 1040)<input type="number" name="gross_income"></p>
+            <p>This year's projected Income: <input type="number" name="exp_income"></p>
+            <p>Authorize a Credit Inquiry:</p>
+            <p>DOB:<input type="date" name="dob"></p>
+            <p>Last 4 of Social:<input type="number" name="ss_num"></p>
+            <button type="submit">Submit Application</button>
+        </div>
+
+        <div id="note">
+            <p>*Get your pre-approval in as fast as a minute.  A home loan expert will reach out to confirm any details if needed. -Speedy Loans</p>
+        </div>
+
+    </div>
+</body>
+</html>
