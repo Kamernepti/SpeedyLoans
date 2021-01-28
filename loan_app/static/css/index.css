@@ -1,12 +1,55 @@
 #wrapper {
-    
+    display:flex;
+    flex-direction: column;
+    background-color: gray;
+    background: linear-gradient(rgb(112, 106, 106), rgb(54, 54, 47))
 }
 
-#header h1, img, a {
+#header {
+    margin:10px;
+    background-color: white;
+    padding:10px;
+    display:flex;
+    justify-content: space-between;
+    border-radius: 25px;
+}
+
+#header h1 {
     display:inline;
+    margin: 5px;
+    font-style: italic;
+}
+
+#pic_bar {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #start_box {
-    outline: 2px solid black;
+    border: 3px groove  gray;
+    border-radius:5px;
     height: auto;
+    margin: 10px;
+    padding:10px;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+#start_box > button {
+    color:white;
+    background-color: rgb(70, 161, 70);
+    box-shadow: 0 3px 3px 0 gray;
+}
+
+#footer {
+    margin: 10px;
+    color: white;
+    display:flex;
+    justify-content: center;
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-size: 12px;
 }

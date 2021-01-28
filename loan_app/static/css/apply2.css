@@ -1,0 +1,33 @@
+#wrapper {
+    display:flex;
+    flex-direction: column;
+    background-color: gray;
+    background: linear-gradient(rgb(112, 106, 106), rgb(54, 54, 47))
+}
+
+#header {
+    margin:10px;
+    background-color: white;
+    padding:10px;
+    display:flex;
+    justify-content: space-between;
+    border-radius: 25px;
+}
+
+#header h1 {
+    display:inline;
+    margin: 5px;
+    font-style: italic;
+}
+
+
+
+#footer {
+    margin: 10px;
+    color: white;
+    display:flex;
+    justify-content: center;
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-size: 12px;
+}
