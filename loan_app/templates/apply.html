@@ -13,32 +13,36 @@
     <div id="wrapper">
 
         <div id="header">
-            <img src="static/images/jetpic.jpg" alt="jet_pic" style="width:50px">
+            <img id="icon" src="static/images/jetpic.jpg" alt="jet_pic">
             <h1>Speedy Loans</h1>
-            <a href="">Step 2<img src="static/images/arrow.jpg" alt="arrow_pic" style="width:25px"></a>
+            <a href="">Step 2 <img src="static/images/arrow.jpg" alt="arrow_pic" style="width:5%"></a>
         </div>
 
         <div id="pic_bar">
-            
+            <img class="image" src="static/images/loan_pic5.jpg" alt="">
+            <img class="image" src="static/images/loan_pic6.jpg" alt="">
+            <img class="image" src="static/images/loan_pic7.jpg" alt="">
         </div>
 
-        <div id="personal_info">
-            <h2>Enter your information to begin:</h2>
-            <p>Full Name: <input type="text" name="full_name"></p>
-            <p>Home Address: <input type="text" name="address"></p>
-        </div>
+        <div id="input_containers">
+            <div id="personal_info" class= "input_container">
+                <h2 class="heading">Enter your information to begin:</h2>
+                <p>Full Name: <input type="text" name="full_name"></p>
+                <p>Home Address: <input type="text" name="address"></p>
+            </div>
 
-        <div id="employer_info">
-            <h2>Employer Name:</h2>
-            <p>Time Employed (Months): <input type="number" id="employment_time" name="employment_time"></p>
-            <p>Contact Info: <input type="text" id="contact" name="contact"></p>
-        </div>
+            <div id="employer_info" class= "input_container">
+                <h2 class="heading">Employer Name:</h2>
+                <p>Time Employed (Months): <input type="number" id="employment_time" name="employment_time"></p>
+                <p>Contact Info: <input type="text" id="contact" name="contact"></p>
+            </div>
 
-        <div id="financials">
-            <h2>Financials:</h2>
-            <p>Income (Annualized): <input type="number" id="income" name="income"></p>
-            <p>Assets (Cash, Retirement, Investments): <input type="number" id="assets" name="assets"></p>
-            <p>Debt (Mortgages, Credit Cards, Installment Loan): <input type="number" id="debt" name="debt"></p>
+            <div id="financials" class= "input_container">
+                <h2 class="heading" >Financials:</h2>
+                <p>Income (Annualized): <input type="number" id="income" name="income"></p>
+                <p>Assets (Cash, Retirement, Investments): <input type="number" id="assets" name="assets"></p>
+                <p>Debt (Mortgages, Credit Cards, Installment Loan): <input type="number" id="debt" name="debt"></p>
+            </div>
         </div>
 
         <div id="chat"></div>
