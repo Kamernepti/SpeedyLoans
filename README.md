@@ -1,7 +1,7 @@
 # group_project
 Speedy Loans Python/Django Project for class
 
-Speedy Loans
+Speedy Loans:
 A Python/Django project allowing users to input information for a quick loan qualification evaluation.
 Users will either be directed to an approved or not approved page.
 
