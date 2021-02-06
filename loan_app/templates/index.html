@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
@@ -9,19 +10,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Loans Made Better</title>
 </head>
+
 <body>
+
     <div id="wrapper">
-        
+
         <div id="header">
             <img id="icon" src="static/images/jetpic.jpg" alt="jet_pic">
             <h1>Speedy Loans</h1>
-            <a href="">Step 1 </a>
+            <p>Step 1 </p>
         </div>
 
         <div id="pic_bar">
-            <img class="image" src="static/images/loan_pic1.jpg" alt="">
-            <img class="image" src="static/images/loan_pic2.jpg" alt="">
-            <img class="image" src="static/images/loan_pic3.jpg" alt="">
+            <img class="image" src="static/images/loan_pic1.jpg" alt="" style="height:200px">
+            <img class="image" src="static/images/loan_pic2.jpg" alt="" style="height:200px">
+            <img class="image"src="static/images/loan_pic3.jpg" alt="" style="height:200px">
         </div>
 
         <div id="start_box">
@@ -32,13 +35,14 @@
                 <li>Assets & Liabilies</li>
             </ol>
 
-            <button id="start_button">Start Now</button>
+            <button><a href="/start" id="start_button">Start Now</button>
         </div>
 
         <div id="footer">
             <p>1-800-Speedy1</p>
         </div>
-        
+
     </div>
 </body>
+
 </html>

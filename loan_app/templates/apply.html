@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/apply.css' %}">
@@ -9,13 +10,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speedy Loans Application</title>
 </head>
+
 <body>
     <div id="wrapper">
 
         <div id="header">
             <img id="icon" src="static/images/jetpic.jpg" alt="jet_pic">
             <h1>Speedy Loans</h1>
-            <a href="">Step 2 <img src="static/images/arrow.jpg" alt="arrow_pic" style="width:5%"></a>
+            <p>Step 2</p>
         </div>
 
         <div id="pic_bar">
@@ -24,33 +26,52 @@
             <img class="image" src="static/images/loan_pic7.jpg" alt="">
         </div>
 
-        <div id="input_containers">
-            <div id="personal_info" class= "input_container">
-                <h2 class="heading">Enter your information to begin:</h2>
-                <p>Full Name: <input type="text" name="full_name"></p>
-                <p>Home Address: <input type="text" name="address"></p>
-            </div>
+        <div id ="form_container">
+            <form action="/result" method="POST">
+                <div id="personal_info" class= "input_container">
+                    {% csrf_token %}
+                    <h2 class="heading">Enter your information to begin:</h2>
+                    <p>First Name: <input type="text" name="first_name"></p>
+                    <p>Last Name: <input type="text" name="last_name"></p>
+                    <p>Email: <input type="text" name="email"></p>
+                    <!-- <p>City: <input type="text" name="city"></p>
+                    <p>State: <input type="text" name="state"></p>
+                    <p>Zip Code: <input type="text" name="zip"></p> -->
+                </div>
 
-            <div id="employer_info" class= "input_container">
-                <h2 class="heading">Employer Name:</h2>
-                <p>Time Employed (Months): <input type="number" id="employment_time" name="employment_time"></p>
-                <p>Contact Info: <input type="text" id="contact" name="contact"></p>
-            </div>
+                <div id="employer_info" class= "input_container">
+                    <h2 class="heading">Employment Status</h2>
+                    <input type="radio" id="employed" name="employed" value="True">
+                    <label for="employed">Employed</label><br>
+                    <input type="radio" id="employed" name="employed" value="False">
+                    <label for="not_employed">Not Employed</label><br>
+                    <!-- <h2>Employer Details:</h2> -->
+                    <!-- <p>Time Employed (Months): <input type="number" id="employment_time" name="employment_time"></p>
+                    <p>Monthly Gross Salary (Pre-Tax)<input type="number" id="salary" name="salary"></p>
+                    <p>Contact Name: <input type="text" id="contact" name="contact_name"></p>
+                    <p>Contact Phone : <input type="text" id="contact" name="contact_phone"></p> -->
+                    </div>
 
-            <div id="financials" class= "input_container">
-                <h2 class="heading" >Financials:</h2>
-                <p>Income (Annualized): <input type="number" id="income" name="income"></p>
-                <p>Assets (Cash, Retirement, Investments): <input type="number" id="assets" name="assets"></p>
-                <p>Debt (Mortgages, Credit Cards, Installment Loan): <input type="number" id="debt" name="debt"></p>
-            </div>
+                <div id="credit_info" class= "input_container">
+                    <h2 class="heading">Credit:</h2>
+                    <p>Please input your credit score</p>
+                    <p>Credit Score (Approx) <input type="number" id="credit" name="credit"></p>
+                </div>
+
+                <div id="financials" class= "input_container">
+                        <h2 class="heading">Financials:</h2>
+                        <p>Income (Annualized): <input type="number" id="income" name="income">
+                        <input type="hidden" name="approved_amount" id="approved_amount value"='1'></p>
+                        <button type='submit' id="submit_button" class="btn btn-primary btn-lg btn-custom">SUBMIT</button></p>
+                </div>
+
+            </form>
         </div>
-
-        <div id="chat"></div>
 
         <div id="footer">
             <p>1-800-Speedy1</p>
         </div>
-
     </div>
 </body>
+
 </html>
