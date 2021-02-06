@@ -4,6 +4,7 @@
 3. components 
     3.1 images    
     3.2 icon
+    3.3 button
 */
 
 /* 
@@ -13,7 +14,7 @@ global styles
   */
 
 
-:root{
+  :root{
     font-size: 1 em;
 }
 
@@ -49,7 +50,7 @@ body{
     flex-wrap: wrap;
 }
 
-#input_containers{
+#form_containers{
     display: flex;
     flex-wrap: wrap;
 }
@@ -70,15 +71,19 @@ body{
 }
 
 #personal_info{
-    width: 35%;
+    width: 85%;
 }
 
 #employer_info{
-    width: 35%;
+    width: 85%;
+}
+
+#credit_info {
+    width: 85%;
 }
 
 #financials{
-    width: 70%;
+    width: 85%;
 }
 
 #footer {
@@ -104,7 +109,7 @@ typography
     text-shadow: 2px 1px rgb(155, 154, 154);
 }
 
-#header a {
+#header p {
     font-family: sans-serif;
     text-decoration: none;
     color: rgb(12, 49, 18);
@@ -133,4 +138,12 @@ components
     width: 3.5rem;
     margin-left: 2rem;
     display: flex;
+}
+
+#submit_button{
+    color:white;
+    background-color: rgb(48, 110, 48);
+    box-shadow: 0 3px 3px 0 gray;
+    width: 35%;
+    margin: auto;
 }

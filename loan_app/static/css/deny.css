@@ -2,8 +2,8 @@
 1.global styles
 2. typography
 3. components 
-    3.1 button
-    3.2 icon
+    3.1 icon
+    3.2 
 */
 
 /* 
@@ -42,19 +42,21 @@ body{
     background: linear-gradient(rgb(136, 190, 152), rgb(90, 83, 83));
 }
 
-#authorize {
+#message{
     border: .15rem groove  gray;
     border-radius:1rem;
     height: auto;
-    width: 80%;
     margin: auto;
     margin-top: 15px;
     padding:10px;
-    color: white;
+    color: rgb(216, 216, 216);
     display:flex;
     flex-direction: column;
+    flex-wrap: wrap;
     font-family: sans-serif;
     background: linear-gradient(rgb(90, 83, 83), rgb(77, 151, 99));
+    width: 95%;
+    max-width: 90%;
 }
 
 #footer {
@@ -66,6 +68,7 @@ body{
     font-family: sans-serif;
     font-size: .85rem;
 }
+
 
 /* 
 ==============
@@ -80,22 +83,19 @@ typography
     text-shadow: 2px 1px rgb(155, 154, 154);
 }
 
-#header a {
+
+#deny {
+    margin: auto;
+    color: rgb(215, 218, 77);
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+#header p {
     font-family: sans-serif;
     text-decoration: none;
     color: rgb(12, 49, 18);
     font-weight: bold;
-}
-
-#heading {
-    color:rgb(221, 220, 220);
-    text-shadow: 2px 1px black;
-}
-
-#note{
-    color: rgb(221, 220, 220);
-    margin: auto;
-    max-width: 90%;
 }
 
 /* 
@@ -103,14 +103,6 @@ typography
 components 
 ==============
   */
-
-#authorize > button {
-    color:white;
-    background-color: rgb(48, 110, 48);
-    box-shadow: 0 3px 3px 0 gray;
-    width: 35%;
-    margin: auto;
-}
 
 #icon{
     width: 3.5rem;

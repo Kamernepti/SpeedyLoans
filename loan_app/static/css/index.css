@@ -87,7 +87,7 @@ typography
     text-shadow: 2px 1px rgb(155, 154, 154);
 }
 
-#header a {
+#header p {
     font-family: sans-serif;
     text-decoration: none;
     color: rgb(12, 49, 18);

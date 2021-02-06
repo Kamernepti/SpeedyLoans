@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/result.css' %}">
+    <link rel="stylesheet" href="{% static 'css/deny.css' %}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="{% static 'script/result.js' %}"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loan Approved</title>
+    <title>Loan Not Approved</title>
 </head>
 
 <body>
@@ -20,16 +19,15 @@
             <p>Finished</p>
         </div>
 
-        <div id="approve">
-            <h2> Approved </h2>
+        <div id="deny">
+            <h2> Loan Not Approved </h2>
         </div>
 
         <div id="message">
             <p>Dear <strong>{{data.first_name}} {{data.last_name}}</strong>,</p>
-            <p>You've been conditionally approved for a home loan in the amount of <strong>{{data.approved_amount}}</strong>.  This pre-approval is valid for 30 days.  If you have any questions, please call or email us at the contact information below. You will be contacted by one of our team members shortly to finish documentation</p>
-            <p>Speedy Loans</p>
-            <p>1-800-685-0091</p>
-            <p>CA NMLS 014946</p>
+            <p>After Review, we are unable to instantly pre-qualify you for a loan at this time. To complete a full application, please call us at the number below 24/7. Please follow us on twitter!</p>
+        
+            <p> Application Date: {{data.created_at}}</p>
         </div>
 
         <div id="footer">
@@ -37,6 +35,6 @@
         </div>
 
     </div>
-</body>
 
+</body>
 </html>
