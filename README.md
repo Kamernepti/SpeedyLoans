@@ -1,4 +1,4 @@
-# group_project
+# SpeedyLoans
 Speedy Loans Python/Django Project for class
 
 Speedy Loans:
